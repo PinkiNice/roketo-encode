@@ -1,15 +1,19 @@
-import { useParams, useNavigate, Link } from "react-router-dom";
-import { InstallSlide } from "./1_Install";
-import { CreateStreamsSlide } from "./2_CreateStreams";
-import { TokensPerTickSlide } from "./3_TokensPerTick";
-import { ViewStreamsSlide } from "./4_ViewStreams";
-import { BalanceWithdrawSlide } from "./5_BalanceWithdraw";
-import { WhatCanBeDone } from "./6_WhatCanBeDone";
-import { ReachUs } from "./7_ReachUs";
+import { useParams, Link } from "react-router-dom";
+import { HelloSlide } from "./1_Hello";
+import { QuickStart } from "./2_QuickStart";
+import { ManageStreams } from "./3_ManageStreams";
+import { TokensPerTickSlide } from "./5_TokensPerTick";
+import { NEP141TokensSlide } from "./4_NEP-141";
+import { ViewStreamsSlide } from "./6_ViewStreams";
+import { BalanceWithdrawSlide } from "./7_BalanceWithdraw";
+import { WhatCanBeDone } from "./8_WhatCanBeDone";
+import { ReachUs } from "./9_ReachUs";
 
 const slides = [
-  InstallSlide,
-  CreateStreamsSlide,
+  HelloSlide,
+  QuickStart,
+  ManageStreams,
+  NEP141TokensSlide,
   TokensPerTickSlide,
   ViewStreamsSlide,
   BalanceWithdrawSlide,
@@ -26,8 +30,14 @@ function SlidesNavigation({ slidesCount }: { slidesCount: number }) {
   const isLast = next === currentSlide;
   const isFirst = prev === currentSlide;
 
+  // useEffect(() => {
+  //   const listener = (e: Event) => {
+  //     if (e.key)
+  //   }
+  // })
+
   return (
-    <div className="flex justify-between align-center text-4xl">
+    <div className="flex justify-between align-center text-4xl bottom-10 fixed w-full pl-10 pr-10 left-0">
       <Link to={"/" + prev.toString()}>{isFirst ? "✋" : "👈"}</Link>
       <Link to={"/" + next.toString()}>{isLast ? "✋" : "👉"}</Link>
     </div>
@@ -40,7 +50,7 @@ export function Slides() {
 
   return (
     <div className="flex flex-col flex-grow">
-      <div className="flex-grow">
+      <div className="flex-grow flex flex-col">
         <SlideComponent />
       </div>
       <div className="mt-8">

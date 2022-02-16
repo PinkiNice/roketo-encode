@@ -1,4 +1,4 @@
-# Contract documentation (outdated)
+# Contract documentation
 
 ## Repository structure
 
