@@ -20,12 +20,11 @@ const tokensToMap = (tokens: RoketoTokenStatus[]) => {
 };
 
 export async function initRoketo({
-  account,
   walletConnection,
 }: {
-  account: Account;
   walletConnection: WalletConnection;
 }): Promise<Roketo> {
+  const account = await walletConnection.account();
   const contract = new nearAPI.Contract(account, ROKETO_CONTRACT_NAME, {
     viewMethods: [
       "get_account",

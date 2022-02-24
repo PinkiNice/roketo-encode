@@ -11,7 +11,7 @@ export function HelloSlide() {
 });`;
 
   return (
-    <div className="text-center  text-2xl">
+    <div className="text-center text-2xl">
       <h1>DeFi Streaming with Roketo 🚀</h1>
       <p className="text-center text-2xl mb-10">
         Earn or spend every second, literally

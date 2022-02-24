@@ -25,13 +25,13 @@ export function WhatCanBeDone() {
             <br />
             (Access private resources)
           </li>
-          <li>
+          {/* <li>
             {" "}
             <b>Continous Token Distribution</b>
             <br /> Continously mint&distribute tokens <br />
             by weightening incoming streams? <br /> (Distribute 100 tokens a
             week)
-          </li>
+          </li> */}
           <li>
             <b>???</b>
           </li>

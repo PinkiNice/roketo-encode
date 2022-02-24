@@ -22,13 +22,9 @@ export function AppContextProvider({
     const init = async () => {
       const near = await createNearInstance();
       const walletConnection = new WalletConnection(near, "roketo");
-      const account = await walletConnection.account();
-
       const roketo = await initRoketo({
-        account,
         walletConnection,
       });
-
       setContext({
         near,
         roketo,

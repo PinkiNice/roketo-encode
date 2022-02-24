@@ -53,3 +53,137 @@ export function ManageStreams() {
     </div>
   );
 }
+
+export function ManageStreamsCreate() {
+  const code = `
+  // Give your employee unpaid day-off
+  // [owner, receiver]
+  roketo.pauseStream({ streamId });
+  
+  // Start paying them again after a break
+  // [owner]
+  roketo.startStream({ streamId });
+  
+  // Add more funds as you need
+  // [anyone]
+  roketo.depositStream({ streamId });
+  
+  // Kill the stream, to raise their salaries
+  // (or to fire them)
+  // [owner, receiver]
+  roketo.stopStream({ streamId });
+  `;
+  return (
+    <div className="text-center text-2xl">
+      <h1>Manage your Streams</h1>
+      <div className="mb-10">
+        <p>Just 4 basic operations</p>
+      </div>
+      <section>
+        <div className="text-left inline-block">
+          <SyntaxHighlighter>{code}</SyntaxHighlighter>
+        </div>
+      </section>
+    </div>
+  );
+}
+export function ManageStreamsPause() {
+  const code = `
+  // Give your employee unpaid day-off
+  // [owner, receiver]
+  roketo.pauseStream({ streamId });
+  
+  // Start paying them again after a break
+  // [owner]
+  roketo.startStream({ streamId });
+  
+  // Add more funds as you need
+  // [anyone]
+  roketo.depositStream({ streamId });
+  
+  // Kill the stream, to raise their salaries
+  // (or to fire them)
+  // [owner, receiver]
+  roketo.stopStream({ streamId });
+  `;
+  return (
+    <div className="text-center text-2xl">
+      <h1>Manage your Streams</h1>
+      <div className="mb-10">
+        <p>Just 4 basic operations</p>
+      </div>
+      <section>
+        <div className="text-left inline-block">
+          <SyntaxHighlighter>{code}</SyntaxHighlighter>
+        </div>
+      </section>
+    </div>
+  );
+}
+export function ManageStreamsDeposit() {
+  const code = `
+  // Give your employee unpaid day-off
+  // [owner, receiver]
+  roketo.pauseStream({ streamId });
+  
+  // Start paying them again after a break
+  // [owner]
+  roketo.startStream({ streamId });
+  
+  // Add more funds as you need
+  // [anyone]
+  roketo.depositStream({ streamId });
+  
+  // Kill the stream, to raise their salaries
+  // (or to fire them)
+  // [owner, receiver]
+  roketo.stopStream({ streamId });
+  `;
+  return (
+    <div className="text-center text-2xl">
+      <h1>Manage your Streams</h1>
+      <div className="mb-10">
+        <p>Just 4 basic operations</p>
+      </div>
+      <section>
+        <div className="text-left inline-block">
+          <SyntaxHighlighter>{code}</SyntaxHighlighter>
+        </div>
+      </section>
+    </div>
+  );
+}
+
+export function ManageStreamsStop() {
+  const code = `
+  // Give your employee unpaid day-off
+  // [owner, receiver]
+  roketo.pauseStream({ streamId });
+  
+  // Start paying them again after a break
+  // [owner]
+  roketo.startStream({ streamId });
+  
+  // Add more funds as you need
+  // [anyone]
+  roketo.depositStream({ streamId });
+  
+  // Kill the stream, to raise their salaries
+  // (or to fire them)
+  // [owner, receiver]
+  roketo.stopStream({ streamId });
+  `;
+  return (
+    <div className="text-center text-2xl">
+      <h1>Manage your Streams</h1>
+      <div className="mb-10">
+        <p>Just 4 basic operations</p>
+      </div>
+      <section>
+        <div className="text-left inline-block">
+          <SyntaxHighlighter>{code}</SyntaxHighlighter>
+        </div>
+      </section>
+    </div>
+  );
+}

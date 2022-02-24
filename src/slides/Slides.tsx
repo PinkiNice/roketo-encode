@@ -1,6 +1,11 @@
 import { useParams, Link } from "react-router-dom";
 import { HelloSlide } from "./1_Hello";
-import { QuickStart } from "./2_QuickStart";
+import {
+  QuickStart,
+  QuickStartCodeExample,
+  QuickStartFetchAccount,
+  QuickStartFetchStream,
+} from "./2_QuickStart";
 import { ManageStreams } from "./3_ManageStreams";
 import { TokensPerTickSlide } from "./5_TokensPerTick";
 import { NEP141TokensSlide } from "./4_NEP-141";
@@ -12,14 +17,47 @@ import { ReachUs } from "./9_ReachUs";
 const slides = [
   HelloSlide,
   QuickStart,
+  QuickStartCodeExample,
+  QuickStartFetchAccount,
+  QuickStartFetchStream,
   ManageStreams,
   NEP141TokensSlide,
   TokensPerTickSlide,
-  ViewStreamsSlide,
+  //ViewStreamsSlide,
   BalanceWithdrawSlide,
   WhatCanBeDone,
   ReachUs,
 ];
+
+// . DeFi | Payment Streaming
+// .. describe what roketo is,
+// .. how it differs from usual payments,
+// .. how it is innovative
+//
+// . Useful Links
+// .. this repo is located here,
+// .. docs are here
+//
+// . Lets pay someone
+// .. Create a stream to pay monthly salary to employee
+// .. calculate tokensPerTick: [code example]
+// .. roketo.createStream: [code example]
+//
+// . Viewing stream
+// .. roketo.getStream: [code example]
+//
+// . Stopping stream
+// .. Stop the stream to give a day-off
+// .. roketo.stopStream: [code example]
+//
+// . Restart stream
+// .. Restore employee's salary
+// .. roketo.startStream: [code example]
+//
+// . Give a raise
+// .. Suppose we want to raise employee's salary
+// .. roketo.stopStream: [code example]
+// .. and create a new one
 
 function SlidesNavigation({ slidesCount }: { slidesCount: number }) {
   const { slide } = useParams();
