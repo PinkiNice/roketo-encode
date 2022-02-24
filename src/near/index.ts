@@ -11,8 +11,5 @@ export async function createNearInstance() {
     headers: {},
   });
 
-  // здесь  скорее всего contractName прокидывается
-  // _near.walletConnection = new nearAPI.WalletConnection(near, "roketo");
-
   return near;
 }
